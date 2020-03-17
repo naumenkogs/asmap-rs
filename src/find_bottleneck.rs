@@ -58,7 +58,7 @@ impl FindBottleneck {
         for (addr, mut as_path) in prefix_to_common_suffix {
             let asn = match as_path.pop() {
                 Some(a) => a,
-                None => panic!("ERROR: No ASN"), // TODO: Handle error
+                None => panic!("ERROR test: No ASN"), // TODO: Handle error
             };
             self.prefix_asn.insert(addr, asn);
         }
